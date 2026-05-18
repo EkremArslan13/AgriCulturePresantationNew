@@ -19,3 +19,9 @@ Proje, sürdürülebilir ve kurumsal standartlara uygun olması amacıyla 4 teme
 * Tamamen dinamik, yönetim paneli (Admin Dashboard) üzerinden kontrol edilebilir içerik altyapısı.
 * Katmanlı mimari kurallarına uygun, temiz ve okunabilir kod yapısı.
 * SOLID prensiplerine dikkat edilerek geliştirilmiş backend mimarisi.
+  
+## 🔐 Güvenlik ve Kimlik Doğrulama (ASP.NET Core Identity)
+Sistemdeki kullanıcı yönetimi ve oturum güvenliği **ASP.NET Core Identity** kütüphanesi entegre edilerek sağlanmıştır. Projede şu temel güvenlik yapıları pratik edilmiştir:
+* **Kimlik Doğrulama (Authentication):** Kullanıcı kayıt (Register) ve giriş (Login) mekanizmalarının kurulması.
+* **Şifre Güvenliği:** Kullanıcı şifrelerinin veri tabanında düz metin olarak değil, Identity'nin sunduğu güvenli şifreleme (Password Hashing) algoritmalarıyla kriptolanarak saklanması.
+* **Oturum Yönetimi (Cookie Authentication):** Kullanıcıların sisteme giriş yaptıktan sonra güvenli bir şekilde çerezler (Cookies) üzerinden oturumlarının takibi ve çıkış (Logout) işlemlerinin yapılması.
