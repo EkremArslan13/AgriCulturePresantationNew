@@ -1,0 +1,26 @@
+﻿@model EntityLayer.Concrete.Contact
+
+<div class="col-md-9 contact-middle">
+    <h2>Merhaba de!!</h2>
+
+    @using (Html.BeginForm("SendMessage", "Default", FormMethod.Post))
+    {
+        <div class="form-agileinfo">
+            <p>Adınız Soyadınız</p>
+            <!-- asp-for kullanıyorsan name özelliğini sistem otomatik atar,
+                 yine de garantiye almak için name="Name" şeklinde de bakabilirsin -->
+            <input type="text" asp-for="Name" name="Name" placeholder="İsminiz" required="" />
+
+            <p>Email</p>
+            <input type="email" asp-for="Mail" name="Mail" placeholder="emailiniz" required="" />
+        </div>
+
+        <div class="form-agileits-w3layouts">
+            <p>Mesajınız</p>
+            <textarea asp-for="Message" name="Message" placeholder="Mesajınız..." required=""></textarea>
+
+            <button type="submit">Gönder</button>
+        </div>
+        <div class="clearfix"></div>
+    }
+</div>
